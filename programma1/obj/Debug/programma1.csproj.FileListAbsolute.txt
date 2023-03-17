@@ -1,0 +1,11 @@
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\bin\Debug\programma1.exe.config
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\bin\Debug\programma1.exe
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\bin\Debug\programma1.pdb
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\obj\Debug\programma1.csproj.AssemblyReference.cache
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\obj\Debug\programma1.csproj.SuggestedBindingRedirects.cache
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\obj\Debug\programma1.Form1.resources
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\obj\Debug\programma1.Properties.Resources.resources
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\obj\Debug\programma1.csproj.GenerateResource.cache
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\obj\Debug\programma1.csproj.CoreCompileInputs.cache
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\obj\Debug\programma1.exe
+C:\Users\maxho\OneDrive\Desktop\progromesana-3\programma1\obj\Debug\programma1.pdb
