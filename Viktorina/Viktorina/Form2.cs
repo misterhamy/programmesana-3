@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,23 +11,13 @@ using System.Windows.Forms;
 
 namespace Viktorina
 {
-
+    
     public partial class Form2 : Form
     {
-        void Sajaukt()
-        {
-            var rand = new Random();
-            for (int i = 0; i < 10; i++)
-            {
-                int x = rand.Next(25);
-                int y = rand.Next(25);
-                string pag = jautajumi[x];
-                jautajumi[x] = jautajumi[y];
-                jautajumi[y] = pag;
-            }
+
 
             string[] jautajumi = new string[] {
-            jautajumi[0] ="KAD LATVIJĀ TIEK SVINĒTI DARBA SVĒTKI?",
+            "KAD LATVIJĀ TIEK SVINĒTI DARBA SVĒTKI?",
             "KAD LATVIJĀ TIEK SVINĒTS LATVIJAS REPUBLIKAS NEATKARĪBAS ATJAUNOŠANAS DIENA?",
             "KAD LATVIJĀ TIEK SVINĒTS LIGO?",
             "KAS TIEK SVINĒTS 18. NOVEMBRĪ?",
@@ -54,13 +45,11 @@ namespace Viktorina
             "1999. GADĀ PAR LATVIJAS PREZIDENTI KĻUVA VAIRA VĪĶE – FREIBERGA. UZ TO BRĪDI VIŅA BIJA PIRMĀ SIEVIETE PREZIDENTE:"  };
 
 
-        }
+        
 
 
 
 
-        void parbaude()
-        {
             string[] atbildes1 = new string[] {
             "1. maijā",
             "25. aprīlī",
@@ -173,12 +162,12 @@ namespace Viktorina
             "Saeima",
             "Austrumeiropā"
         };
-        }
 
 
+        var random = new Random();
 
-
-
+        int x = random.Next(0,26);
+        public static int piemeri = x;
         public static int punkti = 0;
 
         public Form2()
