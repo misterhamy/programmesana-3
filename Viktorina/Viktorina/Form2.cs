@@ -10,9 +10,28 @@ using System.Windows.Forms;
 
 namespace Viktorina
 {
+
     public partial class Form2 : Form
     {
-        string[] jautajumi = new string[] {
+        void Sajaukt()
+        {
+            var rand = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                int x = rand.Next(25);
+                int y = rand.Next(25);
+                string pag = jautajumi[x];
+                jautajumi[x] = jautajumi[y];
+                jautajumi[y] = pag;
+            }
+
+            string[] jautajumi = new string[] {
+            jautajumi[0] ="KAD LATVIJĀ TIEK SVINĒTI DARBA SVĒTKI?",
+            "KAD LATVIJĀ TIEK SVINĒTS LATVIJAS REPUBLIKAS NEATKARĪBAS ATJAUNOŠANAS DIENA?",
+            "KAD LATVIJĀ TIEK SVINĒTS LIGO?",
+            "KAS TIEK SVINĒTS 18. NOVEMBRĪ?",
+            "KAS TIEK SVINĒTS 17. JŪNIJĀ?",
+            "KAS TIEK SVINĒTS 1. JŪNIJĀ?",
             "KĀ SAUC LATVIJAS LIELĀKO UPI?",
             "KĀ SAUC LATVIJAS GALVASPILSĒTU?",
             "KĀ SAUC LATVIJAS GARĀKO UPI?",
@@ -32,9 +51,23 @@ namespace Viktorina
             "NOSAUC LATVIJAS DZIĻĀKO EZERU!",
             "KĀ SAUC JŪRU, PIE KURAS ATRODAS LATVIJA?",
             "KAS IR LATVIJAS VALSTS LIKUMDEVĒJS?",
-            "1999. GADĀ PAR LATVIJAS PREZIDENTI KĻUVA VAIRA VĪĶE – FREIBERGA. UZ TO BRĪDI VIŅA BIJA PIRMĀ SIEVIETE PREZIDENTE:"
-        };
-        string[] atbildes1 = new string[] {
+            "1999. GADĀ PAR LATVIJAS PREZIDENTI KĻUVA VAIRA VĪĶE – FREIBERGA. UZ TO BRĪDI VIŅA BIJA PIRMĀ SIEVIETE PREZIDENTE:"  };
+
+
+        }
+
+
+
+
+        void parbaude()
+        {
+            string[] atbildes1 = new string[] {
+            "1. maijā",
+            "25. aprīlī",
+            "22 – 23. jūnijā",
+            "Latvijas Republikas neatkarības atjaunošanas diena",
+            "Latvijas Republikas okupācijas diena ",
+            "Starptautiskā bērnu aizsardzības diena ",
             "Daugava",
             "Liepāja",
             "Lielupe",
@@ -56,7 +89,13 @@ namespace Viktorina
             "Prezidents",
             "Eiropā"
         };
-        string[] atbildes2 = new string[] {
+            string[] atbildes2 = new string[] {
+            "4. maijā",
+            "3. maijā",
+            "23—24. Jūnijā",
+            " Latvijas Republikas Proklamēšanas diena ",
+            " ugunsdzēsēju un glābēju diena",
+            " Starptautiskā ģimenes diena ",
             "Lielupe",
             "Daugavpils",
             "Daugava",
@@ -78,7 +117,13 @@ namespace Viktorina
             "Ministri",
             "Austrumeiropā"
         };
-        string[] atbildes3 = new string[] {
+            string[] atbildes3 = new string[] {
+            "3. jūnijā ",
+            "4 maijā ",
+            "29. jūnijā ",
+            "Latvijas Republikas okupācijas diena ",
+            "Latvijas brīvības cīnītāju piemiņas diena ",
+            "Medicīnas darbinieku diena ",
             "Gauja",
             "Rīga",
             "Gauja",
@@ -100,7 +145,13 @@ namespace Viktorina
             "Saeima",
             "Baltijā"
         };
-        string[] atbildes = new string[] {
+            string[] atbildes = new string[] {
+            "1. maijā",
+            "4 maijā",
+            "23—24. Jūnijā",
+            "Latvijas Republikas Proklamēšanas diena",
+            "Latvijas Republikas okupācijas diena",
+            "Starptautiskā bērnu aizsardzības diena",
             "Daugava",
             "Rīga",
             "Gauja",
@@ -122,7 +173,12 @@ namespace Viktorina
             "Saeima",
             "Austrumeiropā"
         };
-        int piemeri = 0;
+        }
+
+
+
+
+
         public static int punkti = 0;
 
         public Form2()
@@ -207,5 +263,9 @@ namespace Viktorina
             }
         }
 
+
+
     }
+
 }
+
